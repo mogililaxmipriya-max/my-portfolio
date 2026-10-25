@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #f5f5ff;
+      line-height: 1.7;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      background: #121a30;
+      position: sticky;
+      top: 0;
+    }
+    nav a { color: #d8d9ff; text-decoration: none; margin-left: 16px; }
+    .hero { text-align: center; padding: 90px 20px; }
+    .hero h1 { font-size: clamp(32px, 6vw, 55px); }
+    .accent { color: #a99bff; }
+    section { padding: 50px 8%; }
+    .card {
+      background: #151e35;
+      padding: 22px;
+      border-radius: 14px;
+      border: 1px solid #293653;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .btn {
+      display: inline-block;
+      background: #a99bff;
+      color: #101020;
+      padding: 11px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer { text-align: center; padding: 25px; color: #b9bfd4; }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>MyPortfolio.</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="accent">BTECH STUDENT • FUTURE DEVELOPER</p>
+    <h1>Hello, I'm <span class="accent">Mogili Laxmi Priya</span></h1>
+    <p>Learning to build creative websites and AI-powered solutions.</p>
+    <a class="btn" href="#projects">Explore My Work</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      I'm a BTech student passionate about technology, programming,
+      web development, and artificial intelligence. I'm currently
+      learning new skills and building projects to grow as a developer.
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="grid">
+      <div class="card">🐍 Python — Learning</div>
+      <div class="card">🌐 HTML & CSS — Learning</div>
+      <div class="card">⚡ JavaScript — Learning</div>
+      <div class="card">🟢 Node.js — Learning</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>My First Website</h3>
+        <p>A personal website built using HTML and CSS.</p>
+        <p>Technologies: HTML, CSS</p>
+      </div>
+      <div class="card">
+        <h3>RUNVERSE</h3>
+        <p>An endless-runner game concept I'm working towards.</p>
+        <p>Technologies: JavaScript, Web Development</p>
+      </div>
+      <div class="card">
+        <h3>Python Projects</h3>
+        <p>Small programs created while learning Python.</p>
+        <p>Technologies: Python</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <p>Interested in connecting or collaborating?</p>
+      <a class="btn" href="mailto:mogililaxmipriya@gmail.com">
+        Email Me
+      </a>
+      <p><a href="https://github.com/YOUR_USERNAME">My GitHub</a></p>
+      <p><a href="https://www.linkedin.com/">My LinkedIn</a></p>
+    </div>
+  </section>
+
+  <footer>© 2026 Your Name | Built with HTML & CSS</footer>
+</body>
+</html>
